@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS Quiz</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="card">
+          <div class="header">
+           <!-- <span id="remaining"> Questions 25 out of 10 </span>
+            <div class="timmer">00:00</div>  -->
+          </div>
+          <div >
+            <h3 class="questions"></h3>
+          </div>
+          <div class="options">
+              <div id="showScore" onclick="submit()" class="scoreArea"></div>
+            <ul>
+                <li>
+                    <input type="radio" name="option" id="ans1" class="answers">
+                    <label for="ans1" id="option1"></label>
+                </li>
+                <li>
+                    <input type="radio" name="option" id="ans2" class="answers">
+                    <label for="ans2" id="option2"></label>
+                </li>
+                <li>
+                    <input type="radio" name="option" id="ans3" class="answers">
+                    <label for="ans3" id="option3"></label>
+                </li>
+                <li>
+                    <input type="radio" name="option" id="ans4" class="answers">
+                    <label for="ans4" id="option4"></label>
+                </li>
+            </ul>
+            <div class="btn">
+                <button class="nextBtn"  id="next">Next</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <script src="css.js"></script>
+</body>
+</html>

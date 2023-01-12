@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dcdde1;
+    position: fixed;
+}
+.form{
+    width: 400px;
+    /* min-height: 65vh; */
+    background-color:#fff;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* text-align: center; */
+}
+
+.actionsBtn{
+    width: 80%;
+    background-color: #0097e6;
+    margin: 2em;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    border-radius: 50px;
+}
+.actionBtn{
+    padding: 1em;
+    width: 50%;
+    outline: none;
+    border:none;
+    background-color: transparent;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow:rgba(0,0,0,0.09)0px 3px 12px;
+}
+.moveBtn{
+    position: absolute;
+    /* display: none; */
+    width: 50%;
+    height: 90%;
+    margin: 2px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    background-color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    box-shadow:rgba(0,0,0,0.1)0px 4px 12px;
+    transform: translateX(0);
+   transition: all 0.2s ease-in-out;
+}
+.rightBtn{
+   transform: translateX(97%);
+   transition: all 0.2s ease-in-out;
+   cursor: pointer;
+}
+.inputs{
+    width: 300px;
+    margin: 0.8em 0;
+    background-color:rgb(245,245,245);
+    border-radius: 50px ;
+    box-shadow:rgba(0,0,0,0.12)0px 1px 3px,rgba(0,0,0,0.24) 0px 1px 2px;
+}
+.inputs input{
+    width: 100%;
+    padding: 1em 1.5em;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    border-radius: 20px ;
+} 
+.submitBtn{
+    padding: 1em;
+    margin: 2em 0;
+    width: 150px;
+    background-color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 14px;
+    box-shadow:rgba(0,0,0,0.12)0px 1px 3px,rgba(0,0,0,0.24) 0px 1px 2px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.submitBtn:hover{
+    background-color: #0097e6;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+.main_form{
+    display: none;
+}
+.signupForm{
+    display: block;
+}
+.loginForm{
+    display: block;
+}
+.center{
+    text-align: center;
+}
+.header{
+    width: 100%;
+    padding: 25px 20px 25px 20px;
+    border-radius: 10px 10px 0px 0px;
+    background-color: #0097e6;
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+}
+.card{
+    width: 50vw;
+    margin-bottom: 0%;
+    background-color:#fff;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    /* text-align: center; */
+}
+.questions {
+    margin : 1em;
+}
+.options{
+    margin-bottom: -1em ;
+    padding-left: 2em;
+}
+.options li{
+    list-style: none;
+}
+.options li label{
+    cursor: pointer;
+}
+.btn{
+    display: flex;
+    justify-content:flex-end;
+}
+.nextBtn {
+    padding: 1em;
+    margin: 1.5em 0;
+    width: 150px;
+    background-color:#0097e6;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    box-shadow: rgba(0,0,0,0.12)0px 1px 3px,rgba(0,0,0,0.24) 0px 1px 2px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.nextBtn:hover{
+    background-color: #fff;
+    color:#0097e6;
+    transition: all 0.3s ease-in-out;
+}
+.scoreArea {
+    display: none;
+}
+
+#showScore {
+    
+    position: relative;
+    width: 40vw;
+    margin-bottom: 0%;
+    background-color:gray;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+table  {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+table tr{
+    column-gap: 10px;
+}

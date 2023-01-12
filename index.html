@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz-App</title>
+</head>
+<body>
+<div class="wrapper">
+    <div class="form">
+        <div class="actionsBtn">
+            <button class="actionBtn signupBtn">Sign Up</button>
+            <button class="actionBtn loginBtn">Login </button>
+            <button class="moveBtn ">Sign Up</button>
+        </div>
+      <div class="userForm">
+      <form action="" class="main_form signupForm" id="signup" >
+        <div class="inputs" >
+            <input type="text" id="name" placeholder="Name" autocomplete="off" >
+        </div>
+        <div class="inputs">
+            <input type="email" id="email" placeholder="Email" autocomplete="off" >
+        </div> 
+        <div class="inputs">
+            <input type="password" id="password" placeholder="Password" autocomplete="off" >
+        </div>
+        <button type="submit" onclick="signUpPanel()" class="submitBtn">Sign Up</button>
+    </form>
+    
+    <form action="quiz.html" class="main_form" id="login" >
+        
+        <div class="inputs">
+            <input type="email" id="login-email" placeholder="Email" autocomplete="off" >
+        </div> 
+        <div class="inputs">
+            <input type="password" id="login-pass" placeholder="Password" autocomplete="off" >
+        </div>
+        
+        <button type="submit" class="submitBtn" onclick="loginPanel()">Login</button>
+    </form>
+    </div>
+    </div>
+</div>
+    
+
+<script src="app.js"></script>
+</body>
+</html>
